@@ -1,40 +1,65 @@
+@import "vars";
+@import "global";
+/* @import 'fonts'; */
 
-/*Обнуление*/
-*,
-*:before,
-*:after {
-	padding: 0;
-	margin: 0;
-	border: 0;
-	box-sizing: border-box;
+.header {
 }
-a {
-	text-decoration: none;
+.header__top {
 }
-ul,
-ol,
-li {
-	list-style: none;
+.container {
 }
-img {
-	vertical-align: top;
+.header__top-inner {
+	display: flex;
+	justify-content: space-between;
+	height: 90px;
+	align-items: center;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-weight: inherit;
-	font-size: inherit;
+.header__logo {
 }
-html,
-body {
-	height: 100%;
+.header__text {
+	margin-left: auto;
+	margin-right: 50px;
+	span {
+		color: $red;
+	}
 }
-body {
-	font-family: Rubik;
-	font-size: 15px;
-	color: #000;
+.header__phone {
 }
-/* ================ */
+.header__box {
+}
+.basket {
+}
+.header__btn {
+	padding: 4px;
+	width: 72px;
+	border-radius: 4px;
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+}
+.header__btn-login {
+	background-color: $green;
+}
+.header__btn-register {
+	background-color: $red;
+	margin-left: 7px;
+}
+.header__menu {
+	background-color: $bg;
+}
+.menu {
+	display: flex;
+	align-items: center;
+	height: 60px;
+}
+.menu__list {
+	li {
+		display: inline-block;
+		& + li {
+			margin-left: 30px;
+		}
+	}
+	a {
+		color: #fff;
+	}
+}

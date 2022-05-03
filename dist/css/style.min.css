@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/*Обнуление*/
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #546e7a;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #546e7a;
+}
+
+/* ================ */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* @import 'fonts'; */
+.header__top-inner {
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  align-items: center;
+}
+
+.header__text {
+  margin-left: auto;
+  margin-right: 50px;
+}
+.header__text span {
+  color: #e74c3c;
+}
+
+.header__btn {
+  padding: 4px;
+  width: 72px;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+}
+
+.header__btn-login {
+  background-color: #8bc34a;
+}
+
+.header__btn-register {
+  background-color: #e74c3c;
+  margin-left: 7px;
+}
+
+.header__menu {
+  background-color: #263238;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.menu__list li {
+  display: inline-block;
+}
+.menu__list li + li {
+  margin-left: 30px;
+}
+.menu__list a {
+  color: #fff;
+}
