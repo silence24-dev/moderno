@@ -1,14 +1,11 @@
 import * as flsFunctions from "./modules/functions.js";
-
 flsFunctions.isWebp();
 
-/* import Swiper, { Navigation, Pagination } from 'swiper';
+import $ from "jquery";
+import "slick-carousel";
+import mixitup from 'mixitup';
 
-const swiper = new Swiper(); */
 
 $(function(){
-
-
-
-
+	var mixer = mixitup('.products__inner-box');
 });

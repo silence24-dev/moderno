@@ -1,6 +1,7 @@
+/* @import 'fonts'; */
 @import "vars";
 @import "global";
-/* @import 'fonts'; */
+@import "./libs/slick.scss";
 
 /* ------------------------header------------------------- */
 .header {
@@ -116,6 +117,145 @@
 			background-color: transparent;
 			right: 20px;
 			top: 20px;
+		}
+	}
+}
+/* ------------------------products------------------------- */
+.products {
+	padding: 110px 0px;
+	background-color: $grey;
+
+	&__title {
+	}
+
+	&__inner {
+	}
+
+	&__inner-btn {
+		text-align: center;
+		margin-bottom: 60px;
+		button {
+			padding: 12px 21px;
+			border: none;
+			background-color: #fff;
+			color: $bg;
+			cursor: pointer;
+			& + button {
+				margin-left: 5px;
+			}
+			&.mixitup-control-active {
+				background-color: $red;
+				color: #fff;
+			}
+		}
+		
+	}
+
+	&__inner-box {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+}
+.container-fluid {
+}
+.product {
+	&__item {
+		max-width: 442px;
+		width: 100%;
+		box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+		margin-bottom: 30px;
+		&:hover {
+			box-shadow: 0px 16px 20px 0px rgba(216, 216, 216, 0.75);
+		}
+	}
+
+	&__item-img {
+		min-height: 250px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		display: block;
+	}
+
+	&__item-content {
+		font-weight: 500;
+		display: flex;
+		justify-content: space-between;
+		padding: 10px 30px;
+		align-items: center;
+		min-height: 90px;
+		border-bottom: 1px solid #e7ecf2;
+	}
+
+	&__item-name {
+		max-width: 310px;
+	}
+
+	&__item-title {
+		display: block;
+		color: $bg;
+		font-size: 18px;
+	}
+
+	&__item-category {
+		display: block;
+		color: $green;
+		font-size: 14px;
+	}
+
+	&__item-price {
+		font-size: 20px;
+		font-weight: 700;
+		color: $bg;
+	}
+
+	&__item-info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 70px;
+		padding: 10px 30px;
+	}
+
+	&__item-author {
+		display: flex;
+		align-items: center;
+		.avatar {
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			display: inline-block;
+			margin-right: 14px;
+		}
+		span {
+			font-size: 14px;
+			font-weight: 500;
+		}
+	}
+
+	&__item-star {
+		font-size: 12px;
+		color: $bg;
+	}
+
+	&__bottom-btn {
+		text-align: center;
+		border: none;
+		button {
+			margin: 45px 5px 0;
+			box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
+			background-color: #fff;
+			color: $bg;
+			padding: 20px 30px;
+			cursor: pointer;
+			&.mixitup-control-active {
+				background-color: $red;
+				color: #fff;
+			}
 		}
 	}
 }

@@ -40,8 +40,10 @@
     "gulp-webp-html-nosvg": "latest",
     "gulp-webpcss": "latest",
     "gulp-zip": "latest",
+    "jquery": "^3.6.0",
+    "mixitup": "^3.3.1",
     "sass": "latest",
-    "swiper": "latest",
+    "slick-carousel": "^1.8.1",
     "vinyl-ftp": "latest",
     "webp-converter": "2.2.3",
     "webpack-stream": "latest"
@@ -50,4 +52,3 @@
     "D": "latest"
   }
 }
-
