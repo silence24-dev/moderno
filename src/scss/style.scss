@@ -416,3 +416,42 @@
 	&__item-text {
 	}
 }
+/* ------------------------author------------------------- */
+.author {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 750px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&__box {
+		width: 100%;
+		max-width: 650px;
+		min-height: 215px;
+		background-color: $green;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #fff;
+	}
+
+	&__title {
+		font-size: 30px;
+		line-height: 30px;
+		margin-right: 45px;
+		max-width: 260px;
+		span {
+			font-weight: 700;
+		}
+	}
+
+	&__link {
+		/* высота кнопки - высота строки / 2 = padding сверху и снизу */
+		padding: 14px 40px;
+		background-color: #fff;
+		font-size: 18px;
+		line-height: 36px;
+	}
+}
