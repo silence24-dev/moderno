@@ -4,7 +4,8 @@ flsFunctions.isWebp();
 import $ from "jquery";
 import "slick-carousel";
 import mixitup from 'mixitup';
-import "./modules/rating.js"
+import "./modules/rating.js";
+/* import 'rateyo'; */
 
 
 
@@ -19,5 +20,9 @@ $(function () {
 		arrows: false,
 	});
 
+	/* $(".rate-star").rateYo({
+		rating: 3.6
+	}); */
+	
 });
 

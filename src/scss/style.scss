@@ -1,4 +1,4 @@
-/* @import 'fonts'; */
+@import "fonts";
 @import "vars";
 @import "global";
 @import "./libs/slick.scss";
@@ -387,7 +387,7 @@
 		align-items: center;
 		text-align: center;
 		color: #fff;
-		&:hover .advantages__item-title{
+		&:hover .advantages__item-title {
 			color: $green;
 		}
 	}
@@ -410,7 +410,7 @@
 		font-size: 24px;
 		margin-bottom: 25px;
 		font-weight: 500;
-		transition: all .5s;
+		transition: all 0.5s;
 	}
 
 	&__item-text {
@@ -479,7 +479,7 @@
 	&__item-images {
 		min-height: 270px;
 		background-repeat: no-repeat;
-		background-position:  center;
+		background-position: center;
 		background-size: cover;
 	}
 
@@ -489,7 +489,134 @@
 		color: $bg;
 		background-color: #f8f8f8;
 		padding: 30px 10px;
-
 	}
 }
 
+/* ------------------------tutorial------------------------- */
+.footer {
+	background-color: $bg;
+	color: #fff;
+
+	&__content {
+		padding: 95px 0 80px;
+	}
+
+	&__inner {
+		display: flex;
+		/* justify-content: space-between; */
+		margin: 0 -40px;
+	}
+
+	&__col {
+		flex: 0 1 25%;
+		padding: 0px 40px;
+	}
+
+	&__col-title {
+		padding-bottom: 30px;
+		margin-bottom: 30px;
+		position: relative;
+		font-size: 22px;
+		font-family: Raleway;
+		font-weight: 700;
+		&::after {
+			position: absolute;
+			content: "";
+			width: 55px;
+			height: 3px;
+			background-color: $green;
+			left: 2px;
+			bottom: 0;
+		}
+	}
+
+	&__col-text {
+		margin-bottom: 30px;
+		color: #b7c3c8;
+	}
+
+	&__info {
+		color: #fff;
+		font-size: 14px;
+		font-family: Lato;
+		font-weight: 700;
+		padding-left: 30px;
+		position: relative;
+		&:not(:last-child) {
+			margin-bottom: 17px;
+		}
+		&::before {
+			position: absolute;
+			content: "\f041";
+			font-family: "icomoon" !important;
+			color: $green;
+			font-size: 18px;
+			left: 0;
+			top: 0;
+		}
+	}
+
+	&__info-phone {
+		&::before {
+			content: "\f095";
+		}
+	}
+	&__col-list {
+		margin-top: 25px;
+		li {
+			position: relative;
+			padding-left: 25px;
+			&::before {
+				position: absolute;
+				font-family: "icomoon" !important;
+				content: "\f105";
+				color: $green;
+				font-size: 18px;
+				top: 0;
+				left: 0;
+			}
+		}
+		li:not(:last-child) {
+			margin-bottom: 13px;
+		}
+		a {
+			color: #b7c3c8;
+		}
+	}
+
+	&__social-link {
+		display: flex;
+		margin: 25px 0px 35px;
+		li {
+			&:not(:last-child) {
+				margin-right: 7px;
+			}
+		}
+	}
+
+	&__form {
+		max-width: 261px;
+		width: 100%;
+		input {
+			padding: 15px 50px 15px 20px;
+			background-color: #2f3c43;
+			border: none;
+		}
+	}
+
+	&__form-title {
+		font-size: 20px;
+		line-height: 36px;
+		margin-bottom: 15px;
+	}
+
+	&__copy {
+		border-top: 1px solid #424d53;
+	}
+
+	&__copy-text {
+		text-align: center;
+		color: #919699;
+		padding: 25px 0;
+	}
+}
