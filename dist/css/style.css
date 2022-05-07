@@ -717,3 +717,35 @@ body {
   font-size: 18px;
   line-height: 36px;
 }
+
+/* ------------------------tutorial------------------------- */
+.tutorial {
+  padding: 70px 0px 120px;
+}
+.tutorial__title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #263238;
+}
+.tutorial__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tutorial__item {
+  flex: 0 1 370px;
+  text-align: center;
+}
+.tutorial__item-images {
+  min-height: 270px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.tutorial__item-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #263238;
+  background-color: #f8f8f8;
+  padding: 30px 10px;
+}
