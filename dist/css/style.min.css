@@ -853,7 +853,6 @@ body {
 }
 .footer__inner {
   display: flex;
-  /* justify-content: space-between; */
   margin: 0 -40px;
 }
 .footer__col {
@@ -927,20 +926,68 @@ body {
   color: #b7c3c8;
 }
 .footer__social-link {
-  display: flex;
-  margin: 25px 0px 35px;
+  margin-bottom: 33px;
 }
-.footer__social-link li:not(:last-child) {
-  margin-right: 7px;
+.footer__social-link li {
+  display: inline-block;
+}
+.footer__social-link li + li {
+  margin-left: 7px;
+}
+.footer__social-link a {
+  width: 28px;
+  height: 28px;
+  background-image: url("../img/css_sprites.png");
+}
+.footer__social-link .link-twitter {
+  background-position: -28px 0;
+}
+.footer__social-link .link-youtube {
+  background-position: 0 -28px;
+}
+.footer__social-link .link-pinterest {
+  background-position: -28px -28px;
+}
+.footer__social-link .link-linkledin {
+  background-position: -56px 0;
 }
 .footer__form {
+  position: relative;
   max-width: 261px;
   width: 100%;
 }
 .footer__form input {
-  padding: 15px 50px 15px 20px;
   background-color: #2f3c43;
   border: none;
+  display: block;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  font-size: 14px;
+  padding-left: 13px;
+  padding-right: 50px;
+}
+.footer__form input::placeholder {
+  color: #697378;
+}
+.footer__form button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #8bc34a;
+  border: none;
+  height: 40px;
+  width: 43px;
+  cursor: pointer;
+}
+.footer__form button::before {
+  content: "\f124";
+  position: absolute;
+  font-family: "icomoon" !important;
+  color: #fff;
+  font-size: 20px;
+  top: 10px;
+  left: 14px;
 }
 .footer__form-title {
   font-size: 20px;
