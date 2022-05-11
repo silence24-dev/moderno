@@ -41,41 +41,104 @@
 	font-style: normal;
 }
 /* =========================== */
-@font-face {
-	font-family: "icomoon";
-	src: url("fonts/icomoon.eot?h88rxk");
-	src: url("fonts/icomoon.eot?h88rxk#iefix") format("embedded-opentype"),
-		url("fonts/icomoon.ttf?h88rxk") format("truetype"), url("fonts/icomoon.woff?h88rxk") format("woff"),
-		url("fonts/icomoon.svg?h88rxk#icomoon") format("svg");
-	font-weight: normal;
-	font-style: normal;
-	font-display: block;
+.icon-search:before {
+	content: "\f002";
 }
-
-[class^="icon-"],
-[class*=" icon-"] {
-	/* use !important to prevent issues with browser extensions that change fonts */
-	font-family: "icomoon" !important;
-	speak: never;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+.icon-envelope-o:before {
+	content: "\f003";
 }
-
+.icon-user:before {
+	content: "\f007";
+}
+.icon-close:before {
+	content: "\f00d";
+}
+.icon-remove:before {
+	content: "\f00d";
+}
+.icon-times:before {
+	content: "\f00d";
+}
+.icon-lock:before {
+	content: "\f023";
+}
 .icon-map-marker:before {
 	content: "\f041";
+}
+.icon-edit:before {
+	content: "\f044";
+}
+.icon-pencil-square-o:before {
+	content: "\f044";
+}
+.icon-mail-forward:before {
+	content: "\f064";
+}
+.icon-share:before {
+	content: "\f064";
+}
+.icon-comment:before {
+	content: "\f075";
 }
 .icon-shopping-cart:before {
 	content: "\f07a";
 }
+.icon-heart-o:before {
+	content: "\f08a";
+}
 .icon-phone:before {
 	content: "\f095";
+}
+.icon-twitter:before {
+	content: "\f099";
+}
+.icon-facebook:before {
+	content: "\f09a";
+}
+.icon-facebook-f:before {
+	content: "\f09a";
+}
+.icon-github:before {
+	content: "\f09b";
+}
+.icon-bell-o:before {
+	content: "\f0a2";
+}
+.icon-group:before {
+	content: "\f0c0";
+}
+.icon-users:before {
+	content: "\f0c0";
+}
+.icon-pinterest:before {
+	content: "\f0d2";
+}
+.icon-sort:before {
+	content: "\f0dc";
+}
+.icon-unsorted:before {
+	content: "\f0dc";
+}
+.icon-sort-desc:before {
+	content: "\f0dd";
+}
+.icon-sort-down:before {
+	content: "\f0dd";
+}
+.icon-sort-asc:before {
+	content: "\f0de";
+}
+.icon-sort-up:before {
+	content: "\f0de";
+}
+.icon-linkedin:before {
+	content: "\f0e1";
+}
+.icon-comment-o:before {
+	content: "\f0e5";
+}
+.icon-comments-o:before {
+	content: "\f0e6";
 }
 .icon-bolt:before {
 	content: "\f0e7";
@@ -83,9 +146,69 @@
 .icon-flash:before {
 	content: "\f0e7";
 }
+.icon-suitcase:before {
+	content: "\f0f2";
+}
 .icon-angle-right:before {
 	content: "\f105";
 }
+.icon-angle-down:before {
+	content: "\f107";
+}
+.icon-mail-reply:before {
+	content: "\f112";
+}
+.icon-reply:before {
+	content: "\f112";
+}
+.icon-meh-o:before {
+	content: "\f11a";
+}
 .icon-location-arrow:before {
 	content: "\f124";
+}
+.icon-cny:before {
+	content: "\f157";
+}
+.icon-jpy:before {
+	content: "\f157";
+}
+.icon-rmb:before {
+	content: "\f157";
+}
+.icon-yen:before {
+	content: "\f157";
+}
+.icon-sort-amount-asc:before {
+	content: "\f160";
+}
+.icon-sort-amount-desc:before {
+	content: "\f161";
+}
+.icon-foursquare:before {
+	content: "\f180";
+}
+.icon-pagelines:before {
+	content: "\f18c";
+}
+.icon-paper-plane:before {
+	content: "\f1d8";
+}
+.icon-send:before {
+	content: "\f1d8";
+}
+.icon-paper-plane-o:before {
+	content: "\f1d9";
+}
+.icon-send-o:before {
+	content: "\f1d9";
+}
+.icon-envelope-open:before {
+	content: "\f2b6";
+}
+.icon-envelope-open-o:before {
+	content: "\f2b7";
+}
+.icon-neutral:before {
+	content: "\e9f7";
 }
