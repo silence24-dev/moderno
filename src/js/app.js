@@ -2,11 +2,11 @@ import * as flsFunctions from "./modules/functions.js";
 flsFunctions.isWebp();
 
 import $ from "jquery";
+
 import "slick-carousel";
 import mixitup from 'mixitup';
 import '@rateyo/jquery/lib/es/jquery.rateyo.js';
-
-
+import '@fancyapps/fancybox/dist/jquery.fancybox.js';
 
 $(function () {
 
@@ -23,6 +23,5 @@ $(function () {
 		rating: 3.6,
 		starWidth: "12px"
 	});
-	
 });
 

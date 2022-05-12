@@ -3,6 +3,7 @@
 @import "global";
 @import "./libs/slick.scss";
 @import "../../node_modules/@rateyo/jquery/lib/es/jquery.rateyo.css";
+@import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css";
 
 /* ------------------------header------------------------- */
 .header {
@@ -186,7 +187,7 @@
 	/* относительно user__box */
 	top: 69px;
 	left: 20px;
-	
+
 	height: 0;
 	overflow: hidden;
 	li {
@@ -389,7 +390,100 @@
 		}
 	}
 }
-
+/* ---------------------popUp------------------------------ */
+#modal {
+	background-color: $green;
+	max-width: 830px;
+	width: 100%;
+	padding: 100px 0 90px 0;
+	.login__wrapper {
+		form {
+			max-width: 400px;
+			margin: 0 auto;
+		}
+		label {
+			position: relative;
+			&::before {
+				position: absolute;
+				font-family: icomoon;
+				font-size: 14px;
+				color: #fff;
+				left: 18px;
+				top: 9px;
+			}
+		}
+		.login__label-name::before {
+			content: "\f007";
+		}
+		.login__label-pass::before {
+			content: "\f023";
+		}
+		input {
+			height: 43px;
+			margin-bottom: 8px;
+			border: none;
+			background-color: #76ae36;
+			color: #fff;
+			padding-left: 40px;
+			display: block;
+			width: 100%;
+			&::placeholder {
+				color: #fff;
+				font-size: 14px;
+			}
+		}
+		.create-acc {
+			margin-top: 18px;
+			padding: 13px 0 14px 28px;
+			text-align: center;
+			width: 246px;
+			background-color: #76ae36;
+			color: #fff;
+			position: relative;
+			&::before {
+				content: "\f044";
+				position: absolute;
+				font-family: icomoon;
+				font-size: 18px;
+				color: #fff;
+				left: 37px;
+				top: 14px;
+			}
+		}
+		.lost-pass {
+			display: block;
+			margin-top: 20px;
+			color: #fff;
+			font-size: 18px;
+		}
+		button {
+			margin-top: 18px;
+			margin-right: 10px;
+			width: 140px;
+			padding: 18px 0 16px;
+			text-transform: uppercase;
+			border: none;
+			font-weight: 700;
+			color: #000;
+			background-color: #fff;
+			box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75);
+			text-align: center;
+		}
+	}
+	.login__title {
+		text-align: center;
+		margin-bottom: 40px;
+		font-size: 48px;
+		line-height: 36px;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 700;
+	}
+}
+.fancybox-button svg path {
+	fill: #fff;
+	stroke-width: 0;
+}
 /* ------------------------search------------------------- */
 .search {
 	background-repeat: no-repeat;

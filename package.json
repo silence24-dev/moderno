@@ -50,6 +50,7 @@
     "webpack-stream": "latest"
   },
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "@rateyo/jquery": "^3.0.0-alpha.2",
     "D": "latest"
   }
