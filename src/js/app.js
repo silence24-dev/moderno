@@ -10,8 +10,6 @@ import '@fancyapps/fancybox/dist/jquery.fancybox.js';
 
 $(function () {
 
-	var mixer = mixitup('.products__inner-box');
-
 	$('.product-slider__inner').slick({
 		dots: true,
 		slidesToShow: 4,
@@ -23,5 +21,16 @@ $(function () {
 		rating: 3.6,
 		starWidth: "12px"
 	});
-});
 
+	$('.menu__btn').on('click', function () {
+		$('.menu__list').slideToggle();
+	});
+
+	$('.header__btn-menu').on('click', function () {
+		$('.header__box').toggleClass('active');
+	});
+
+
+	/* писать самым последним потому что он в DOM только на главной странице */
+	var mixer = mixitup('.products__inner-box');
+});
