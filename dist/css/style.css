@@ -2692,6 +2692,121 @@ body {
   line-height: 24px;
   color: #707070
 }
+.contact {
+  background-color: #f4f6f5
+}
+.contact__wrapper {
+  border: 1px solid #dcdcdc;
+  background-color: #fff;
+  margin-bottom: 150px
+}
+.contact__head {
+  font-size: 24px;
+  font-weight: 500;
+  color: #444;
+  padding: 23px 40px;
+  border-bottom: 1px solid #dcdcdc
+}
+.contact__inner {
+  padding: 35px 40px 15px
+}
+.contact__map {
+  margin-bottom: 50px
+}
+.contact__map iframe {
+  width: 100%;
+  height: 415px
+}
+.contact__box {
+  display: flex
+}
+.contact__info {
+  max-width: 330px;
+  width: 100%;
+  margin-right: 30px
+}
+.contact__info-item {
+  margin-bottom: 30px
+}
+.contact__info-title {
+  padding-bottom: 20px;
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  color: #263238;
+  padding-left: 40px;
+  margin-bottom: 20px
+}
+.contact__info-title::after {
+  position: absolute;
+  content: "";
+  width: 44px;
+  height: 4px;
+  background-color: #8bc34a;
+  bottom: 0;
+  left: 40px
+}
+.contact__info-title::before {
+  position: absolute;
+  font-family: icomoon;
+  color: #8bc34a;
+  font-size: 24px;
+  left: 0
+}
+.contact__info-content {
+  max-width: 230px;
+  width: 100%
+}
+.contact__form {
+  width: 100%
+}
+.contact__form input {
+  border: none;
+  height: 43px;
+  padding: 0 17px;
+  background-color: #f1f4f5;
+  width: 350px;
+  margin-bottom: 30px;
+  display: block
+}
+.contact__form input::placeholder {
+  color: #7a7a7a;
+  font-size: 15px
+}
+.contact__form textarea {
+  border: none;
+  background-color: #f1f4f5;
+  padding: 13px 17px;
+  height: 190px;
+  width: 100%;
+  display: block;
+  resize: none;
+  margin-bottom: 23px
+}
+.contact__form textarea::placeholder {
+  color: #7a7a7a;
+  font-size: 15px
+}
+.contact__form button {
+  border: none;
+  background-color: #8bc34a;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  padding: 20px 5px;
+  width: 190px
+}
+.contact__form-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #333
+}
+.contact__form-row {
+  display: flex;
+  justify-content: space-between
+}
 .breadcrumbs {
   background-color: #f4f6f5
 }
