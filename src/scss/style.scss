@@ -4,6 +4,8 @@
 @import "./libs/slick.scss";
 @import "../../node_modules/@rateyo/jquery/lib/es/jquery.rateyo.css";
 @import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css";
+@import "../../node_modules/jquery-form-styler/dist/jquery.formstyler.css";
+@import "../../node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css";
 
 /* ------------------------header------------------------- */
 .header {
@@ -1985,6 +1987,147 @@
 		background-repeat: repeat;
 	}
 }
+/* ------------------------upload--------------------------- */
+.upload {
+	background-color: #f9f9f9;
+	&__inner {
+		background-color: #fff;
+		border: 1px solid #d7d7d7;
+		margin-bottom: 110px;
+	}
+
+	&__inner-title {
+		padding: 16px 35px 18px;
+		font-size: 24px;
+		font-weight: 500;
+		color: $bg;
+		border-bottom: 1px solid #d7d7d7;
+		margin-bottom: 40px;
+	}
+
+	&__inner-content {
+		margin-bottom: 30px;
+		padding-left: 45px;
+		padding-right: 50px;
+		.upload-line {
+			margin-bottom: 25px;
+			display: flex;
+			label {
+				min-width: 175px;
+				padding-right: 15px;
+				padding-top: 5px;
+				color: #444;
+				span {
+					color: $green;
+				}
+				&::placeholder {
+					color: #707070;
+				}
+			}
+			textarea {
+				display: block;
+				resize: none;
+				background-color: #f9f9f9;
+				border: 1px solid #d7d7d7;
+				height: 150px;
+				width: 100%;
+				padding: 8px 20px;
+			}
+			select,
+			input {
+				display: block;
+				height: 39px;
+				width: 100%;
+				background-color: #f9f9f9;
+				border: 1px solid #d7d7d7;
+				padding: 0px 20px;
+			}
+			input[type='fle'] {
+				outline: none;
+			}
+		}
+		button {
+			color: #fff;
+			background-color: $green;
+			border: none;
+			padding: 15px 36px;
+			margin-left: 175px;
+			cursor: pointer;
+		}
+	}
+}
+.jq-selectbox {
+	width: 100%;
+}
+.jq-selectbox__select {
+	height: 40px;
+	padding: 0px 18px;
+	border: 1px solid #d7d7d7;
+	border-bottom-color: 1px solid #d7d7d7;
+	border-radius: 0px;
+	background-color: #f9f9f9;
+	box-shadow: none;
+	text-shadow: none;
+	color: #707070;
+	font-family: Roboto;
+	line-height: 40px;
+}
+.jq-selectbox__trigger-arrow {
+	border: none;
+	font-size: 15px;
+	line-height: 40px;
+	right: 20px;
+	top: 0;
+	&::before {
+		font-family: icomoon;
+		content: "\f0d7";
+	}
+}
+.jq-selectbox__trigger {
+	border-left: none;
+}
+.jq-file {
+	widows: 100%;
+	border-radius: 0;
+	box-shadow: none;
+	height: 40px;
+	border: 1px solid #d7d7d7;
+	background-color: #f9f9f9;
+}
+.jq-file__name {
+	background: transparent;
+	box-shadow: none;
+	border: none;
+	border-bottom-color: transparent;
+	border-radius: 0px;
+	padding: 0px 18px;
+	height: 40px;
+	font-size: 12px;
+	color: #707070;
+	line-height: 40px;
+	margin-left: 100px;
+}
+.jq-file__browse {
+	text-shadow: none;
+	box-shadow: none;
+	background: #fff;
+	border-radius: 0;
+	border-left: 1px solid #d7d7d7;
+	border: 1px solid #d7d7d7;
+	font-size: 12px;
+	padding: 0 12px;
+	line-height: 26px;
+	color: #444;
+	top: 5px;
+	right: auto;
+	left: 9px;
+}
+
+
+
+
+
+
 
 /* ------------------breadcrumbs------------------ */
 .breadcrumbs {

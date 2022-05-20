@@ -40,7 +40,7 @@
     "gulp-webp-html-nosvg": "latest",
     "gulp-webpcss": "latest",
     "gulp-zip": "latest",
-    "jquery": "^3.6.0",
+    "jquery-form-styler": "^2.0.2",
     "mixitup": "^3.3.1",
     "rateyo": "^2.3.5",
     "sass": "latest",
@@ -52,6 +52,7 @@
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
     "@rateyo/jquery": "^3.0.0-alpha.2",
-    "D": "latest"
+    "D": "latest",
+    "jquery": "^3.6.0"
   }
 }

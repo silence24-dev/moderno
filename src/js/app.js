@@ -1,12 +1,17 @@
 import * as flsFunctions from "./modules/functions.js";
 flsFunctions.isWebp();
 
-import $ from "jquery";
+/* import $ from "jquery"; */
+
+import * as $ from 'jquery';
 
 import "slick-carousel";
 import mixitup from 'mixitup';
 import '@rateyo/jquery/lib/es/jquery.rateyo.js';
 import '@fancyapps/fancybox/dist/jquery.fancybox.js';
+import '../../node_modules/jquery-form-styler/dist/jquery.formstyler.js'
+
+
 
 $(function () {
 
@@ -39,7 +44,12 @@ $(function () {
 		return false;
 	});
 
+	$('input[type="file"], select').styler();
 
 	/* писать самым последним потому что он в DOM только на главной странице */
 	var mixer = mixitup('.products__inner-box');
 });
+
+/* ; (function ($) {
+	// your code
+})(jQuery); */
