@@ -2020,9 +2020,6 @@
 				span {
 					color: $green;
 				}
-				&::placeholder {
-					color: #707070;
-				}
 			}
 			textarea {
 				display: block;
@@ -2032,6 +2029,9 @@
 				height: 150px;
 				width: 100%;
 				padding: 8px 20px;
+				&::placeholder {
+					color: #707070;
+				}
 			}
 			select,
 			input {
@@ -2041,8 +2041,11 @@
 				background-color: #f9f9f9;
 				border: 1px solid #d7d7d7;
 				padding: 0px 20px;
+				&::placeholder {
+					color: #707070;
+				}
 			}
-			input[type='fle'] {
+			input[type="fle"] {
 				outline: none;
 			}
 		}
@@ -2122,12 +2125,186 @@
 	right: auto;
 	left: 9px;
 }
+/* ----------------------withdrawals------------------------- */
 
+.withdrawals {
+	background-color: #f4f6f5;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 110px;
+	}
 
+	&__col {
+		max-width: 570px;
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+		border: 1px solid #d7d7d7;
+	}
 
+	&__box {
+	}
 
+	&__title {
+		font-size: 24px;
+		font-weight: 500;
+		padding: 18px 32px 24px;
+		border-bottom: 1px solid #d7d7d7;
+		margin-bottom: 30px;
+		color: $bg;
+	}
 
+	&__content {
+		padding: 0 40px 0 35px;
+		button {
+			margin-bottom: 50px;
+			color: #fff;
+			background-color: $green;
+			border: none;
+			padding: 15px 36px;
+			cursor: pointer;
+		}
+	}
 
+	&__form-line {
+		margin-bottom: 25px;
+		label {
+			display: block;
+			width: 100%;
+			font-size: 16px;
+			font-weight: 500;
+			color: $bg;
+			span {
+				color: $green;
+			}
+		}
+		input,
+		select {
+			display: block;
+			height: 39px;
+			width: 100%;
+			background-color: #f9f9f9;
+			border: 1px solid #d7d7d7;
+			padding: 0px 20px;
+			&::placeholder {
+				color: #707070;
+			}
+		}
+		select {
+			width: 100%;
+			color: #707070;
+		}
+		.jq-selectbox {
+			width: 100%;
+		}
+		.jq-selectbox__select {
+			height: 40px;
+			padding: 0px 18px;
+			border: 1px solid #d7d7d7;
+			border-bottom-color: 1px solid #d7d7d7;
+			border-radius: 0px;
+			background-color: #f9f9f9;
+			box-shadow: none;
+			text-shadow: none;
+			color: #707070;
+			font-family: Roboto;
+			line-height: 40px;
+		}
+		.jq-selectbox__trigger-arrow {
+			border: none;
+			font-size: 15px;
+			line-height: 40px;
+			right: 20px;
+			top: 0;
+			&::before {
+				font-family: icomoon;
+				content: "\f0d7";
+			}
+		}
+		.jq-selectbox__trigger {
+			border-left: none;
+		}
+		.jq-file {
+			widows: 100%;
+			border-radius: 0;
+			box-shadow: none;
+			height: 40px;
+			border: 1px solid #d7d7d7;
+			background-color: #f9f9f9;
+		}
+		.jq-file__name {
+			background: transparent;
+			box-shadow: none;
+			border: none;
+			border-bottom-color: transparent;
+			border-radius: 0px;
+			padding: 0px 18px;
+			height: 40px;
+			font-size: 12px;
+			color: #707070;
+			line-height: 40px;
+			margin-left: 100px;
+		}
+		.jq-file__browse {
+			text-shadow: none;
+			box-shadow: none;
+			background: #fff;
+			border-radius: 0;
+			border-left: 1px solid #d7d7d7;
+			border: 1px solid #d7d7d7;
+			font-size: 12px;
+			padding: 0 12px;
+			line-height: 26px;
+			color: #444;
+			top: 5px;
+			right: auto;
+			left: 9px;
+		}
+	}
+
+	&__content-items {
+		padding-bottom: 35px;
+	}
+
+	&__content-item {
+		display: flex;
+		height: 42px;
+		align-items: center;
+		font-size: 13px;
+		color: #444;
+		&:nth-child(odd) {
+			background-color: #f9f9f9;
+		}
+	}
+
+	&__content-date {
+		width: 154px;
+		padding-left: 20px;
+		font-weight: 500;
+	}
+
+	&__content-email {
+		width: 180px;
+		font-weight: 500;
+	}
+
+	&__content-price {
+		width: 70px;
+		font-weight: 700;
+	}
+
+	&__content-status {
+		width: 88px;
+		font-weight: 700;
+		&.withdrawals__content-pending {
+		}
+
+		&.withdrawals__content-paid {
+			color: $green;
+		}
+	}
+}
 
 /* ------------------breadcrumbs------------------ */
 .breadcrumbs {
