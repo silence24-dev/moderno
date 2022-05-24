@@ -22,27 +22,27 @@ $(function () {
 		arrows: false,
 		responsive: [
 			{
-			breakpoint: 1900,
-			settings: {
-				slidesToShow: 3,
-				slidesToScroll: 3,
-			}
-		},
-		{
-			breakpoint: 1441,
-			settings: {
-				slidesToShow: 2,
-				slidesToScroll: 2,
-			}
-		},
-		{
-			breakpoint: 801,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1,
-			}
-		},
-	]
+				breakpoint: 1900,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+				}
+			},
+			{
+				breakpoint: 1441,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+				}
+			},
+			{
+				breakpoint: 801,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+			},
+		]
 	});
 
 	$(".rate-star").rateYo({
@@ -93,12 +93,15 @@ $(function () {
 		prefix: "$"
 	});
 
-	/* $(".product-slider .product__item")
-		.parent()
-		.css("margin-right", "10px"); */
+	$('.page').on('click', function () {
+		$('.page').removeClass('active');
+		$(this).addClass('active');
+	});
 
+/* 	$(window).on('resize', function () {
+		var size = $(window).width();//get updated width when window is resized
+		$('.product__item').toggleClass('list', size > 600);//remove class only in less or equal to 1067
+	}).resize();//trigger resize on load */
 
-	/* писать самым последним потому что он в DOM только на главной странице */
-	//var mixer = mixitup('.products__inner-box');
 });
 
