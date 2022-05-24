@@ -1,15 +1,15 @@
 import * as flsFunctions from "./modules/functions.js";
 flsFunctions.isWebp();
 
-/* import $ from "jquery"; */
+import $ from "jquery";
 
-import * as $ from 'jquery';
 
 import "slick-carousel";
 import mixitup from 'mixitup';
 import '@rateyo/jquery/lib/es/jquery.rateyo.js';
 import '@fancyapps/fancybox/dist/jquery.fancybox.js';
 import '../../node_modules/jquery-form-styler/dist/jquery.formstyler.js'
+import 'ion-rangeslider'
 
 
 
@@ -20,6 +20,29 @@ $(function () {
 		slidesToShow: 4,
 		slidesToScroll: 4,
 		arrows: false,
+		responsive: [
+			{
+			breakpoint: 1900,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3,
+			}
+		},
+		{
+			breakpoint: 1441,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2,
+			}
+		},
+		{
+			breakpoint: 801,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			}
+		},
+	]
 	});
 
 	$(".rate-star").rateYo({
@@ -46,10 +69,36 @@ $(function () {
 
 	$('input[type="file"], select').styler();
 
+	if ($('.products__inner-box').length > 0) {
+		var mixer = mixitup('.products__inner-box');
+	}
+
+	$('.icon-th-list').on('click', function () {
+		$('.product__item').addClass('list');
+		$('.icon-th-list').addClass('active');
+		$('.icon-th-large').removeClass('active');
+	});
+	$('.icon-th-large').on('click', function () {
+		$('.product__item').removeClass('list');
+		$('.icon-th-large').addClass('active');
+		$('.icon-th-list').removeClass('active');
+	});
+
+	$('.js-range-slider').ionRangeSlider({
+		type: "double",
+		min: 0,
+		max: 1000,
+		from: 0,
+		to: 600,
+		prefix: "$"
+	});
+
+	/* $(".product-slider .product__item")
+		.parent()
+		.css("margin-right", "10px"); */
+
+
 	/* писать самым последним потому что он в DOM только на главной странице */
-	var mixer = mixitup('.products__inner-box');
+	//var mixer = mixitup('.products__inner-box');
 });
 
-/* ; (function ($) {
-	// your code
-})(jQuery); */
