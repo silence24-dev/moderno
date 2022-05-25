@@ -1,0 +1,219 @@
+@font-face {
+  font-family: icomoon;
+  font-display: swap;
+  src: url(../fonts/icomoon.woff2) format("woff2"),url(../fonts/icomoon.woff) format("woff");
+  font-weight: 400;
+  font-style: normal
+}
+@font-face {
+  font-family: Lato;
+  font-display: swap;
+  src: url(../fonts/Lato-Bold.woff2) format("woff2"),url(../fonts/Lato-Bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal
+}
+@font-face {
+  font-family: Raleway;
+  font-display: swap;
+  src: url(../fonts/Raleway-Bold.woff2) format("woff2"),url(../fonts/Raleway-Bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal
+}
+@font-face {
+  font-family: Roboto;
+  font-display: swap;
+  src: url(../fonts/Roboto-Bold.woff2) format("woff2"),url(../fonts/Roboto-Bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal
+}
+@font-face {
+  font-family: Roboto;
+  font-display: swap;
+  src: url(../fonts/Roboto-Medium.woff2) format("woff2"),url(../fonts/Roboto-Medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal
+}
+@font-face {
+  font-family: Roboto;
+  font-display: swap;
+  src: url(../fonts/Roboto-Regular.woff2) format("woff2"),url(../fonts/Roboto-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal
+}
+.icon-search:before {
+  content: "\f002"
+}
+.icon-envelope-o:before {
+  content: "\f003"
+}
+.icon-user:before {
+  content: "\f007"
+}
+.icon-th-large:before {
+  content: "\f009"
+}
+.icon-th-list:before {
+  content: "\f00b"
+}
+.icon-close:before {
+  content: "\f00d"
+}
+.icon-remove:before {
+  content: "\f00d"
+}
+.icon-times:before {
+  content: "\f00d"
+}
+.icon-lock:before {
+  content: "\f023"
+}
+.icon-map-marker:before {
+  content: "\f041"
+}
+.icon-edit:before {
+  content: "\f044"
+}
+.icon-pencil-square-o:before {
+  content: "\f044"
+}
+.icon-mail-forward:before {
+  content: "\f064"
+}
+.icon-share:before {
+  content: "\f064"
+}
+.icon-comment:before {
+  content: "\f075"
+}
+.icon-shopping-cart:before {
+  content: "\f07a"
+}
+.icon-heart-o:before {
+  content: "\f08a"
+}
+.icon-phone:before {
+  content: "\f095"
+}
+.icon-twitter:before {
+  content: "\f099"
+}
+.icon-facebook:before {
+  content: "\f09a"
+}
+.icon-facebook-f:before {
+  content: "\f09a"
+}
+.icon-github:before {
+  content: "\f09b"
+}
+.icon-bell-o:before {
+  content: "\f0a2"
+}
+.icon-group:before {
+  content: "\f0c0"
+}
+.icon-users:before {
+  content: "\f0c0"
+}
+.icon-pinterest:before {
+  content: "\f0d2"
+}
+.icon-sort:before {
+  content: "\f0dc"
+}
+.icon-unsorted:before {
+  content: "\f0dc"
+}
+.icon-sort-desc:before {
+  content: "\f0dd"
+}
+.icon-sort-down:before {
+  content: "\f0dd"
+}
+.icon-sort-asc:before {
+  content: "\f0de"
+}
+.icon-sort-up:before {
+  content: "\f0de"
+}
+.icon-linkedin:before {
+  content: "\f0e1"
+}
+.icon-comment-o:before {
+  content: "\f0e5"
+}
+.icon-comments-o:before {
+  content: "\f0e6"
+}
+.icon-bolt:before {
+  content: "\f0e7"
+}
+.icon-flash:before {
+  content: "\f0e7"
+}
+.icon-suitcase:before {
+  content: "\f0f2"
+}
+.icon-angle-right:before {
+  content: "\f105"
+}
+.icon-angle-down:before {
+  content: "\f107"
+}
+.icon-mail-reply:before {
+  content: "\f112"
+}
+.icon-reply:before {
+  content: "\f112"
+}
+.icon-meh-o:before {
+  content: "\f11a"
+}
+.icon-location-arrow:before {
+  content: "\f124"
+}
+.icon-cny:before {
+  content: "\f157"
+}
+.icon-jpy:before {
+  content: "\f157"
+}
+.icon-rmb:before {
+  content: "\f157"
+}
+.icon-yen:before {
+  content: "\f157"
+}
+.icon-sort-amount-asc:before {
+  content: "\f160"
+}
+.icon-sort-amount-desc:before {
+  content: "\f161"
+}
+.icon-foursquare:before {
+  content: "\f180"
+}
+.icon-pagelines:before {
+  content: "\f18c"
+}
+.icon-paper-plane:before {
+  content: "\f1d8"
+}
+.icon-send:before {
+  content: "\f1d8"
+}
+.icon-paper-plane-o:before {
+  content: "\f1d9"
+}
+.icon-send-o:before {
+  content: "\f1d9"
+}
+.icon-envelope-open:before {
+  content: "\f2b6"
+}
+.icon-envelope-open-o:before {
+  content: "\f2b7"
+}
+.icon-neutral:before {
+  content: "\e9f7"
+}
